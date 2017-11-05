@@ -72,14 +72,13 @@ abstract class AbstractFactory {
     static AbstractFactory getFactory(Architecture architecture) {
         AbstractFactory factory = null;
         switch(architecture) {
-            case AMD: {
+            case AMD: 
                 factory = AMD_FACTORY;
-            }
-            case INTEL: {
+            
+            case INTEL: 
                 factory = INTEL_FACTORY;
-            }
+            
         }
-
         return factory;
     }
 
